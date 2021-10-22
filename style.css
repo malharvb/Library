@@ -1,0 +1,84 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: monospace;
+
+}
+.container
+{
+    display:flex;
+    gap: 10em;
+}
+.bookcontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.book
+{
+    border: 3px solid #CCBCBC;
+    background-color: #F1E3E4;
+    color: #1C1D21;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 4em;
+    width: 200px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.controls
+{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    margin-left: auto;
+}
+#add
+{
+    margin: 1em 0;
+    padding: 1em;
+    width: 25rem;
+    background-color: white;;
+    border: 3px solid #F1E3E4;
+    border-radius: 1em;
+    transition-duration: 0.4s;
+}
+#add:hover
+{
+   box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 11px 50px 0 rgba(0,0,0,0.19);
+   background-color: #F1E3E4;
+}
+input
+{
+    margin: 1em;
+    padding: 1em;
+    display: block;
+    border-radius: .5em;
+    border: .5px solid grey;
+}
+.checkbox
+{
+    display: inline;
+}
+.inbkbtndiv
+{
+    display: flex;
+    gap: 1em;
+}
+.inbkbtn
+{
+    width: 50%;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.sub:active {
+    //background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+  }
