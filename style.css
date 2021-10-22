@@ -77,8 +77,9 @@ input
     border-radius: 1em;
 }
 
-.sub:active {
-    //background-color: #3e8e41;
+.sub:active 
+{
+    background-color: #3e8e41;
     box-shadow: 0 1px #666;
     transform: translateY(4px);
-  }
+}

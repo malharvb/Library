@@ -53,7 +53,7 @@ function submitClick()
 
     let book  = new Book(inputTitle.value,inputAuthor.value,inputPages.value,inputRead.checked);
     myLibrary.push(book);
-    //console.log(myLibrary , book.info());
+    
     inputs.innerHTML = '';
     inputTitle.value = '';
     inputAuthor.value = '';
@@ -62,7 +62,7 @@ function submitClick()
     inputRead.checked = false;
 
     values = myLibrary[i].info().split(',');
-    //console.log(values);
+    
     bookDisp = document.createElement('div');
     bookDisp.classList.add('book');
     bookDisp.setAttribute('id',`${ i }`)
@@ -106,7 +106,7 @@ function submitClick()
 function rmvBook(e)
 {
     myLibrary.splice(e.target.parentElement.parentElement.id,1);
-    console.log(myLibrary);
+    
     e.target.parentElement.parentElement.remove();
     e.target.parentElement.innerHTML = '';
     i--;
